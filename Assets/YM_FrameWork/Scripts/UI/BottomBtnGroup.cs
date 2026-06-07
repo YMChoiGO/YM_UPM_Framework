@@ -15,7 +15,7 @@ public enum LobbyBottonType
 
 public class BottomBtnGroup : MonoBehaviour
 {
-    private LobbySceneUI _body;
+    // private LobbySceneUI _body;
     
     public LobbyBottonType curType;
     public List<Button> buttons = new();
@@ -26,9 +26,9 @@ public class BottomBtnGroup : MonoBehaviour
         buttons = GetComponentsInChildren<Button>().ToList();
     }
     
-    public void Set(LobbySceneUI body)
+    public void Set()//LobbySceneUI body)
     {
-        _body = body;
+        // _body = body;
         curType = LobbyBottonType.Battle;
         BindBtn();
         UpdateVisual(curType);
@@ -50,6 +50,6 @@ public class BottomBtnGroup : MonoBehaviour
             buttons[i].interactable = true;
         }
 
-        _body.UpdateBoard(type);
+        // _body.UpdateBoard(type);
     }
 }

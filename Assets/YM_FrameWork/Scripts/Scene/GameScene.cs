@@ -60,7 +60,7 @@ public class GameScene : Helper
         SliderBind();
         TempUserStat.AddStatEvent -= SliderBind;
         TempUserStat.AddStatEvent += SliderBind;
-        AudioManager.PlayMusic(AudioMusic.OutlawLoop);
+        // AudioManager.PlayMusic(AudioMusic.OutlawLoop);
     }
 
     private void BindBtn()
