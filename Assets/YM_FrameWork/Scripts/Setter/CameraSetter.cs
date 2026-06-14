@@ -6,7 +6,7 @@ public class CameraSetter : MonoBehaviour
 
     private void Start()
     {
-        Setter();
+        // Setter();
     }
 
     public void Setter(float size = 6f)

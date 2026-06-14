@@ -11,4 +11,7 @@ public enum PopupType
     Game_StageFailPopup,
     
     Lobby_InventoryPopup = 400,
+    
+    Lobby_DollspawnPopup = 500,
+    Lobby_Mining,
 }
