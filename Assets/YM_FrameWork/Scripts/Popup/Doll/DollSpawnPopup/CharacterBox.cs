@@ -20,4 +20,13 @@ public class CharacterBox : MonoBehaviour
         characterImage.sprite = ManagerHub.I.Resource.Sprites[$"Profile{_profileType}"];
         gradeImage.sprite = ManagerHub.I.Resource.Sprites[$"Profile_Frame{_profileType}"];
     }
+
+    public DollData GetData()
+    {
+        return new DollData()
+        {
+            profile = _profileType,
+            frame = _frameType
+        };
+    }
 }

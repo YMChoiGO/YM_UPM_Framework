@@ -10,8 +10,12 @@ public enum PopupType
     Game_StageClearPopup,
     Game_StageFailPopup,
     
-    Lobby_InventoryPopup = 400,
+    // Lobby_InventoryPopup = 400,
     
     Lobby_DollspawnPopup = 500,
     Lobby_Mining,
+    Lobby_InventoryPopup = 502,
+    Lobby_Profile = 503,
+    Lobby_QuestPopup,
+    Lobby_Alcemist
 }
