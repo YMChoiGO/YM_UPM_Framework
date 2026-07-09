@@ -29,4 +29,10 @@ public class CharacterBox : MonoBehaviour
             frame = _frameType
         };
     }
+
+    public void Activate(bool avatar, bool frame)
+    {
+        characterImage.enabled = avatar;
+        gradeImage.enabled = frame;
+    }
 }
