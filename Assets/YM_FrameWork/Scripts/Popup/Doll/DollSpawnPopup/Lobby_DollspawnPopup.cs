@@ -95,21 +95,21 @@ public class DollData
     public int stat3;
     public int stat4;
 
-    public LevelData[] priceData;
+    //public LevelData[] priceData;
     
     public ProfileType profile;
     public FrameType frame;
 
     public bool TryPrice(int checkLevel)
     {
-        if (priceData[checkLevel].gold > ManagerHub.I.playerData.Gold)
-        {
-            return false;
-        }
-        if (priceData[checkLevel].exp > ManagerHub.I.playerData.Exp)
-        {
-            return false;
-        }
+        // if (priceData[checkLevel].gold > ManagerHub.I.playerData.Gold)
+        // {
+        //     return false;
+        // }
+        // if (priceData[checkLevel].exp > ManagerHub.I.playerData.Exp)
+        // {
+        //     return false;
+        // }
 
         return true;
     }
@@ -117,10 +117,10 @@ public class DollData
     public void LevelUp()
     {
         level += 1;
-        
-        stat1 = priceData[level].stat1;
-        stat2 = priceData[level].stat2;
-        stat3 = priceData[level].stat3;
-        stat4 = priceData[level].stat4;
+        //
+        // stat1 = priceData[level].stat1;
+        // stat2 = priceData[level].stat2;
+        // stat3 = priceData[level].stat3;
+        // stat4 = priceData[level].stat4;
     }
 }

@@ -16,18 +16,16 @@ public class ManagerHub : MonoBehaviour
         DontDestroyOnLoad(gameObject);
         I = this;
         
-        playerData = GetComponent<PlayerData>();
+        playerData = GetComponentInChildren<PlayerData>();
         playerData.SetUp();
-        Resource = GetComponent<ResourceManager>();
+        Resource = GetComponentInChildren<ResourceManager>();
         Resource.SetUp();
-        Popup = GetComponent<PopupManager>();
+        Popup = GetComponentInChildren<PopupManager>();
         Popup.SetUp();
-        UI = GetComponent<UIManager>();
+        UI = GetComponentInChildren<UIManager>();
         UI.SetUp();
-        Time = GetComponent<TimeManager>();
+        Time = GetComponentInChildren<TimeManager>();
         Time.SetUp();
-        Lobby = GetComponent<LobbyScene>();
-        Lobby.Starter();
     }
 
     public PlayerData playerData;
@@ -36,5 +34,4 @@ public class ManagerHub : MonoBehaviour
     public UIManager UI;
     public ResourceManager Resource;
     public TimeManager Time;
-    public LobbyScene Lobby;
 }
